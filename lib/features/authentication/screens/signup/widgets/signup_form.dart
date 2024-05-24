@@ -35,24 +35,25 @@ class TSignUpForm extends StatelessWidget {
             )
           ],
         ),
-        const SizedBox(width: TSizes.spaceBtwInputFields,),
+        const SizedBox(height: TSizes.spaceBtwInputFields,),
         // username
         TextFormField(
           expands: false,
           decoration:const  InputDecoration(labelText: TTexts.username, prefixIcon: Icon(Iconsax.user_edit)),
         ),
+        const SizedBox(height: TSizes.spaceBtwInputFields,),
         /// email
         TextFormField(
           expands: false,
           decoration:const  InputDecoration(labelText: TTexts.email, prefixIcon: Icon(Iconsax.direct)),
         ),
-        const SizedBox(width: TSizes.spaceBtwInputFields,),
+        const SizedBox(height: TSizes.spaceBtwInputFields,),
         // phone number
         TextFormField(
           expands: false,
           decoration:const  InputDecoration(labelText: TTexts.phoneNo, prefixIcon: Icon(Iconsax.call)),
         ),
-        const SizedBox(width: TSizes.spaceBtwInputFields,),
+        const SizedBox(height: TSizes.spaceBtwInputFields,),
 
         // password
         TextFormField(
@@ -61,7 +62,7 @@ class TSignUpForm extends StatelessWidget {
               prefixIcon: Icon(Iconsax.password_check),
               suffixIcon: Icon(Iconsax.eye_slash)),
         ),
-        const SizedBox(width: TSizes.spaceBtwInputFields,),
+        const SizedBox(height: TSizes.spaceBtwInputFields,),
 
         // term and condition
         const TTermsAndConditionCheckBox(),

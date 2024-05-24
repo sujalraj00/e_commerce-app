@@ -1,5 +1,6 @@
 import 'package:e_commerce/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:e_commerce/features/authentication/screens/signup/signup.dart';
+import 'package:e_commerce/navigation_menu.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -23,7 +24,7 @@ class TLoginForm extends StatelessWidget {
               TextFormField(
                 decoration: const  InputDecoration(
                     prefixIcon: Icon(Iconsax.direct_right),
-                    labelText: TTexts.email
+                    labelText: TTexts.email,
                 ),
               ),
               const SizedBox(height:  TSizes.spaceBtwInputFields,),
@@ -54,7 +55,7 @@ class TLoginForm extends StatelessWidget {
               const SizedBox(height: TSizes.spaceBtwSections,),
               // sign in button
               SizedBox(
-                  width: double.infinity, child: ElevatedButton(onPressed: (){}, child: const Text(TTexts.signIn))),
+                  width: double.infinity, child: ElevatedButton(onPressed: () => Get.to(() => const  NavigationMenu() ) , child: const Text(TTexts.signIn))),
               const SizedBox(height: TSizes.spaceBtwItems,),
               // create account button
               SizedBox(
