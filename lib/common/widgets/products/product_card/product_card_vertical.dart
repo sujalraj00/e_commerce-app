@@ -90,50 +90,40 @@ class TProductCardVertical extends StatelessWidget {
                   const SizedBox(
                     height: TSizes.spaceBtwItems / 2,
                   ),
-                  Row(
-                    children: [
-                      Text(
-                        'Nike',
-                        style: Theme.of(context).textTheme.labelMedium,
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                      ),
-                      const SizedBox(
-                        width: TSizes.xs,
-                      ),
-                      const Icon(
-                        Iconsax.verify5,
-                        color: TColors.primary,
-                        size: TSizes.xs,
-                      )
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      // price
-                      const TProductPriceText(price: '35.0',),
-                      // add to card button
-                      Container(
-                        decoration: const BoxDecoration(
-                            color: TColors.dark,
-                            borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(TSizes.cardRadiusMd),
-                                bottomRight: Radius.circular(
-                                    TSizes.productImageRadius))),
-                        child: const SizedBox(
-                            width: TSizes.iconLg * 1.2,
-                            height: TSizes.iconLg * 1.2,
-                            child: Center(
-                                child: Icon(
-                              Iconsax.add,
-                              color: TColors.white,
-                            ))),
-                      )
-                    ],
-                  )
+                  TBrandTitleWithVerifiedIcon(),
+
+
                 ],
               ),
+            ),
+           const Spacer(),
+            // price row
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                // price
+               const  Padding(
+                  padding:  EdgeInsets.only(left: TSizes.sm),
+                  child:  TProductPriceText(price: '35.0',),
+                ),
+                // add to card button
+                Container(
+                  decoration: const BoxDecoration(
+                      color: TColors.dark,
+                      borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(TSizes.cardRadiusMd),
+                          bottomRight: Radius.circular(
+                              TSizes.productImageRadius))),
+                  child: const SizedBox(
+                      width: TSizes.iconLg * 1.2,
+                      height: TSizes.iconLg * 1.2,
+                      child: Center(
+                          child: Icon(
+                            Iconsax.add,
+                            color: TColors.white,
+                          ))),
+                )
+              ],
             )
           ],
         ),
@@ -141,5 +131,7 @@ class TProductCardVertical extends StatelessWidget {
     );
   }
 }
+
+
 
 
