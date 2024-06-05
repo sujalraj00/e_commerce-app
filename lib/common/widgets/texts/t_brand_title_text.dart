@@ -7,14 +7,14 @@ class TBrandTitleText extends StatelessWidget {
       this.color,
       required this.title,
       this.textAlign = TextAlign.center,
-      this.brandTextSize = TextSize.small,
+      this.brandTextSize = TextSizes.small,
       this.maxLines =1
       });
 
   final Color? color;
   final String title;
   final TextAlign? textAlign;
-  final TextSize brandTextSize;
+  final TextSizes brandTextSize;
   final int maxLines;
 
   @override
@@ -25,11 +25,11 @@ class TBrandTitleText extends StatelessWidget {
       maxLines: maxLines,
       overflow: TextOverflow.ellipsis,
       // check which brand size is required and set that style
-      style: brandTextSize == TextSize.small
+      style: brandTextSize == TextSizes.small
           ? Theme.of(context).textTheme.labelMedium!.apply(color: color)
-          : brandTextSize == TextSize.medium
+          : brandTextSize == TextSizes.medium
               ? Theme.of(context).textTheme.bodyLarge!.apply(color: color)
-              : brandTextSize == TextSize.large
+              : brandTextSize == TextSizes.large
                   ? Theme.of(context).textTheme.titleLarge!.apply(color: color)
                   : Theme.of(context).textTheme.bodyMedium!.apply(color: color),
     );

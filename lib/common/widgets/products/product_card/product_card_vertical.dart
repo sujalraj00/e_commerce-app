@@ -13,6 +13,7 @@ import 'package:iconsax/iconsax.dart';
 
 import '../../icons/t_circular_icon.dart';
 import '../../texts/TProductPriceTitle.dart';
+import '../../texts/t_brand_title_text_with_verified_icon.dart';
 
 class TProductCardVertical extends StatelessWidget {
   const TProductCardVertical({super.key});
@@ -90,7 +91,7 @@ class TProductCardVertical extends StatelessWidget {
                   const SizedBox(
                     height: TSizes.spaceBtwItems / 2,
                   ),
-                  TBrandTitleWithVerifiedIcon(),
+                  TBrandTitleWithVerifiedIcon(title: 'Nike',),
 
 
                 ],

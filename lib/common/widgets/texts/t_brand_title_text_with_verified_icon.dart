@@ -1,3 +1,4 @@
+import 'package:e_commerce/common/widgets/texts/t_brand_title_text.dart';
 import 'package:e_commerce/utils/constants/enums.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -14,14 +15,14 @@ class TBrandTitleWithVerifiedIcon extends StatelessWidget {
     this.textColor,
     this.iconColor = TColors.primary,
     this.textAlign = TextAlign.center,
-    this.brandTextSize = TextSize.small,
+    this.brandTextSize = TextSizes.small,
   });
 
   final String title;
   final int maxLines;
   final Color? textColor, iconColor;
   final TextAlign? textAlign;
-  final TextSize brandTextSize;
+  final TextSizes brandTextSize;
 
   @override
   Widget build(BuildContext context) {
@@ -29,20 +30,21 @@ class TBrandTitleWithVerifiedIcon extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         Flexible(
-          child: Text(
-            'Nike',
-            style: Theme.of(context).textTheme.labelMedium,
-            overflow: TextOverflow.ellipsis,
-            maxLines: 1,
+          child: TBrandTitleText(
+            title: title ,
+            color: textColor,
+            maxLines: maxLines,
+            textAlign: textAlign,
+            brandTextSize: brandTextSize,
           ),
         ),
         const SizedBox(
           width: TSizes.xs,
         ),
-        const Icon(
+         Icon(
           Iconsax.verify5,
-          color: TColors.primary,
-          size: TSizes.xs,
+          color: iconColor,
+          size: TSizes.iconXs,
         )
       ],
     );
