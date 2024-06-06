@@ -36,7 +36,7 @@ class TProductCardVertical extends StatelessWidget {
             // thumbnail, wishlist button and discount tag
             TRoundedContainer(
               height: 180,
-              padding: EdgeInsets.all(TSizes.sm),
+              padding: const  EdgeInsets.all(TSizes.sm),
               backgroundColor: dark ? TColors.dark : TColors.light,
               child: Stack(
                 children: [
@@ -75,28 +75,33 @@ class TProductCardVertical extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: TSizes.spaceBtwItems / 2,
-            ),
+              height: TSizes.spaceBtwItems / 2    ),
 
             // -- Details
-            Padding(
+            const Padding(
               padding: EdgeInsets.only(left: TSizes.sm),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const TProductTitleText(
-                    title: 'Green Nike Air Shoes',
-                    smallSize: true,
-                  ),
-                  const SizedBox(
-                    height: TSizes.spaceBtwItems / 2,
-                  ),
-                  TBrandTitleWithVerifiedIcon(title: 'Nike',),
+              // only reason to use sizedBox here is to make Column full width
+              child: SizedBox(
+                width: double.infinity,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                     TProductTitleText(
+                      title: 'Green Nike Air Shoes',
+                      smallSize: true,
+                    ),
+                     SizedBox(
+                      height: TSizes.spaceBtwItems / 2,
+                    ),
+                    TBrandTitleWithVerifiedIcon(title: 'Nike',),
 
 
-                ],
+                  ],
+                ),
               ),
             ),
+
+           // add spacer to keep the height of each Box same in case 1 or 2 lines of heading
            const Spacer(),
             // price row
             Row(

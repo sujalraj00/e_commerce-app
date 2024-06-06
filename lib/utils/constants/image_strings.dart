@@ -2,6 +2,9 @@
 
 class TImages {
 
+  // profile
+  static const String user = "assets/images/user/user.png";
+
   // -- App Logos
   static const String darkAppLogo = "assets/logos/t-store-splash-logo-black.png";
   static const String lightAppLogo = "assets/logos/t-store-splash-logo-white.png";
