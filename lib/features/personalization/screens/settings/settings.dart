@@ -7,6 +7,7 @@ import 'package:e_commerce/common/widgets/texts/section_heading.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../common/widgets/list_tile/user_profile_tile.dart';
@@ -34,7 +35,7 @@ class SettingsScreen extends StatelessWidget {
                     ),
 
                     // User Profile Card
-                    const TUserProfileTile(),
+                     TUserProfileTile(onPressed: () => Get.to(() => ProfileScreen())),
                     const SizedBox(
                       height: TSizes.spaceBtwSections,
                     ),
@@ -61,8 +62,7 @@ class SettingsScreen extends StatelessWidget {
                   const SizedBox(height: TSizes.spaceBtwSections,),
                   const TSectionHeading(title: 'App Settings', showActionButton: false,),
                   const SizedBox(height: TSizes.spaceBtwItems,),
-                  const TSettingsMenuTile(icon: Iconsax.document_upload, title: 'load Data', subtitle: 'Upload data to your cloud firebase',
-                  ),
+                  const TSettingsMenuTile(icon: Iconsax.document_upload, title: 'load Data', subtitle: 'Upload data to your cloud firebase',),
                   TSettingsMenuTile(icon: Iconsax.location, title: 'Geolocation', subtitle: 'Set recommendation based on location',
                       trailing: Switch(value: true, onChanged: (value){})),
                   TSettingsMenuTile(icon: Iconsax.security_user, title: 'Safe Mode', subtitle: 'Search result is safe for all ages',

@@ -1,3 +1,4 @@
+import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:e_commerce/utils/theme/custom_themes/text_theme.dart';
 import 'package:e_commerce/utils/theme/custom_themes/appbar_theme.dart';
@@ -33,7 +34,7 @@ class TAppTheme{
       useMaterial3: true,
       fontFamily: 'Poppins',
       brightness: Brightness.dark,
-      scaffoldBackgroundColor: Colors.black,
+      scaffoldBackgroundColor: TColors.black,
       primaryColor: Colors.blue,
       textTheme: TTextTheme.darkTextTheme,
       chipTheme: TChipTheme.darkChipTheme,
