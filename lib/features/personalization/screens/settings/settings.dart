@@ -1,7 +1,5 @@
 import 'package:e_commerce/common/widgets/appbar/appbar.dart';
 import 'package:e_commerce/common/widgets/custom_shapes/containers/primary_header_container.dart';
-import 'package:e_commerce/common/widgets/icons/t_circular_icon.dart';
-import 'package:e_commerce/common/widgets/images/t_circular_image.dart';
 import 'package:e_commerce/common/widgets/list_tile/settings_menu_tile.dart';
 import 'package:e_commerce/common/widgets/texts/section_heading.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
@@ -12,6 +10,7 @@ import 'package:iconsax/iconsax.dart';
 
 import '../../../../common/widgets/list_tile/user_profile_tile.dart';
 import '../../../../utils/constants/image_strings.dart';
+import '../profile/profile.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -35,7 +34,7 @@ class SettingsScreen extends StatelessWidget {
                     ),
 
                     // User Profile Card
-                     TUserProfileTile(onPressed: () => Get.to(() => ProfileScreen())),
+                     TUserProfileTile(onPressed: () => Get.to(() =>const ProfileScreen())),
                     const SizedBox(
                       height: TSizes.spaceBtwSections,
                     ),
