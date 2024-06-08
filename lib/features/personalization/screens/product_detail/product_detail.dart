@@ -4,11 +4,13 @@ import 'package:e_commerce/features/personalization/screens/product_detail/widge
 import 'package:e_commerce/features/personalization/screens/product_detail/widgets/product_image_slider.dart';
 import 'package:e_commerce/features/personalization/screens/product_detail/widgets/product_metadata.dart';
 import 'package:e_commerce/features/personalization/screens/product_detail/widgets/rating_and_share_widget.dart';
+import 'package:e_commerce/features/shop/screens/product_reviews/product_reviews.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
 
@@ -58,12 +60,12 @@ class ProductDetailScreen extends StatelessWidget {
                     ),
 
                     // Reviews -------
-                    Divider(),
-                    SizedBox(height: TSizes.spaceBtwItems,),
+                    const Divider(),
+                    const SizedBox(height: TSizes.spaceBtwItems,),
                     Row(
                       children: [
                         const TSectionHeading(title: 'Reviews(199)', showActionButton: false, ),
-                        IconButton(onPressed: (){}, icon: const Icon(Iconsax.arrow_right_3, size: 18,) ,),
+                        IconButton(onPressed:()=> Get.to(()=> const ProductReviewScreen()), icon: const Icon(Iconsax.arrow_right_3, size: 18,) ,),
 
                       ],
                     ),
