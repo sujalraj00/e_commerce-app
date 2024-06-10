@@ -2,7 +2,6 @@
 import 'package:e_commerce/features/shop/screens/product_reviews/user_review_card.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import '../../../../common/widgets/appbar/appbar.dart';
 import '../../../../common/widgets/products/rating/rating_indicator.dart';
 import '../../../personalization/screens/product_detail/widgets/rating_progress_indicator.dart';

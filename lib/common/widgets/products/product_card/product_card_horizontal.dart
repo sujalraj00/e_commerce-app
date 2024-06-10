@@ -7,14 +7,13 @@ import 'package:e_commerce/common/widgets/texts/t_brand_title_text_with_verified
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/image_strings.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../utils/helpers/helper_functions.dart';
 
 class TProductCardHorizontal extends StatelessWidget {
-  TProductCardHorizontal ({super.key});
+  const TProductCardHorizontal ({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -76,7 +75,7 @@ class TProductCardHorizontal extends StatelessWidget {
                       ],
                 ),
 
-                Spacer(),
+                const Spacer(),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [

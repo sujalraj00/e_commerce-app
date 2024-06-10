@@ -1,8 +1,6 @@
 import 'package:e_commerce/common/widgets/appbar/appbar.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:iconsax/iconsax.dart';
 
 class AddNewAddressScreen extends StatelessWidget {
@@ -11,9 +9,9 @@ class AddNewAddressScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: TAppbar(title: Text('Add New Address'), showBackArrow: true),
+      appBar: const TAppbar(title: Text('Add New Address'), showBackArrow: true),
       body: Padding(
-        padding: EdgeInsets.all(TSizes.defaultSpace),
+        padding: const EdgeInsets.all(TSizes.defaultSpace),
         child: Form(
             child: Column(
           children: [
@@ -40,7 +38,7 @@ class AddNewAddressScreen extends StatelessWidget {
             const SizedBox(height: TSizes.spaceBtwInputFields,),
             TextFormField(decoration: const InputDecoration(prefixIcon: Icon(Iconsax.global), labelText: 'Country')),
             const SizedBox(height: TSizes.defaultSpace,),
-            SizedBox(width: double.infinity,child: ElevatedButton(onPressed: (){}, child: Text('Save'),),)
+            SizedBox(width: double.infinity,child: ElevatedButton(onPressed: (){}, child: const Text('Save'),),)
           ],
         )),
       ),

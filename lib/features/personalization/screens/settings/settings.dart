@@ -11,7 +11,6 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../common/widgets/list_tile/user_profile_tile.dart';
-import '../../../../utils/constants/image_strings.dart';
 import '../profile/profile.dart';
 
 class SettingsScreen extends StatelessWidget {

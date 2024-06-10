@@ -7,9 +7,7 @@ import 'package:e_commerce/features/personalization/screens/product_detail/widge
 import 'package:e_commerce/features/shop/screens/product_reviews/product_reviews.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/utils/helpers/helper_functions.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
@@ -44,7 +42,7 @@ class ProductDetailScreen extends StatelessWidget {
                     const SizedBox(height: TSizes.spaceBtwSections,),
 
                     // CheckOut Button ----------
-                    SizedBox(width: double.infinity ,child: ElevatedButton(onPressed: (){}, child:Text('Checkout'))),
+                    SizedBox(width: double.infinity ,child: ElevatedButton(onPressed: (){}, child:const Text('Checkout'))),
 
                     // Description ---------
                     const TSectionHeading(title: 'Description', showActionButton: false,),

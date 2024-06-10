@@ -15,7 +15,7 @@ class TBillingAmountSection extends StatelessWidget {
             Text('\$256', style: Theme.of(context).textTheme.bodyMedium,),
           ],
         ),
-        SizedBox(height: TSizes.spaceBtwItems /2 ,),
+        const SizedBox(height: TSizes.spaceBtwItems /2 ,),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -23,7 +23,7 @@ class TBillingAmountSection extends StatelessWidget {
             Text('\$6', style: Theme.of(context).textTheme.labelLarge,),
           ],
         ),
-        SizedBox(height: TSizes.spaceBtwItems /2 ,),
+        const SizedBox(height: TSizes.spaceBtwItems /2 ,),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -31,7 +31,7 @@ class TBillingAmountSection extends StatelessWidget {
             Text('\$6', style: Theme.of(context).textTheme.labelLarge,),
           ],
         ),
-        SizedBox(height: TSizes.spaceBtwItems /2 ,),
+        const SizedBox(height: TSizes.spaceBtwItems /2 ,),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [

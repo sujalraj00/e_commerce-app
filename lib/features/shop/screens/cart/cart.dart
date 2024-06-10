@@ -1,12 +1,9 @@
 import 'package:e_commerce/common/widgets/appbar/appbar.dart';
-import 'package:e_commerce/features/personalization/screens/product_detail/widgets/product_price_text.dart';
 import 'package:e_commerce/features/shop/screens/cart/widgets/cart_items.dart';
 import 'package:e_commerce/features/shop/screens/checkout/checkout.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/utils/helpers/helper_functions.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 
 

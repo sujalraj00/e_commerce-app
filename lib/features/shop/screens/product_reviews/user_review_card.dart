@@ -7,7 +7,7 @@ import 'package:e_commerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:readmore/readmore.dart';
 class TUserReviewCard extends StatelessWidget {
-  const TUserReviewCard({Key ? key}) : super(key:key);
+  const TUserReviewCard({super.key});
 
   @override
   Widget build(BuildContext context) {
