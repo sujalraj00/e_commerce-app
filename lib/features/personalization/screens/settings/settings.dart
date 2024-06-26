@@ -2,6 +2,7 @@ import 'package:e_commerce/common/widgets/appbar/appbar.dart';
 import 'package:e_commerce/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:e_commerce/common/widgets/list_tile/settings_menu_tile.dart';
 import 'package:e_commerce/common/widgets/texts/section_heading.dart';
+import 'package:e_commerce/data/repositories/authentication/authentication_repository.dart';
 import 'package:e_commerce/features/personalization/screens/address/address.dart';
 import 'package:e_commerce/features/shop/screens/order/order.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
@@ -18,6 +19,7 @@ class SettingsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(AuthenticationRepository());
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
@@ -137,7 +139,7 @@ class SettingsScreen extends StatelessWidget {
                   SizedBox(
                     width: double.infinity,
                     child: OutlinedButton(
-                        onPressed: () {}, child: const Text('Logout')),
+                        onPressed: () => controller.logout(), child: const Text('Logout')),
                   ),
                   const SizedBox(
                     height: TSizes.spaceBtwSections * 2.5,
