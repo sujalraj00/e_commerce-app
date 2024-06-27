@@ -65,7 +65,7 @@ class UserModel {
   }
 
 // factory method to create a UserModel from a firebase document snapshot
-  factory UserModel.Snapshot(DocumentSnapshot <Map<String, dynamic>> document){
+  factory UserModel.fromSnapshot(DocumentSnapshot <Map<String, dynamic>> document){
     if (document.data() != null) {
       final data = document.data()!;
       return UserModel(id: document.id,

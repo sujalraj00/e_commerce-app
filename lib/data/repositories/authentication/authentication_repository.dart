@@ -21,6 +21,8 @@ class AuthenticationRepository extends GetxController{
   final deviceStorage = GetStorage();
   final _auth = FirebaseAuth.instance;
 
+  // get authenticated user data
+  User? get authUser => _auth.currentUser;
   // ----- Called from main.dart on app launch
   @override
   void onReady(){
@@ -114,7 +116,25 @@ class AuthenticationRepository extends GetxController{
   }
 
   //[ReAuthentication]  ReAuthenticate user
-  /// FORGET PASS
+  /// [EMAIL AUTHENTICATION] -------FORGET PASS
+
+  Future<void> sendPasswordResetEmail(String email) async {
+    try{
+      await _auth.sendPasswordResetEmail(email: email);
+    } on FirebaseAuthException catch (e) {
+      throw TFirebaseAuthException(e.code).message;
+    } on FirebaseException catch (e){
+      throw TFirebaseException(e.code).message;
+    } on FormatException catch (e){
+      throw const TFormatException();
+    }  on PlatformException catch (e) {
+      throw TPlatformException(e.code).message;
+    } catch (e) {
+      throw 'Something went wrong. Please try again.';
+    }
+  }
+
+
  /*---------------- federated identity and social sign in----------------------*/
 /// [GOOGLE AUTH] - GOOGLE
   Future<UserCredential?> signInWithGoogle() async {
