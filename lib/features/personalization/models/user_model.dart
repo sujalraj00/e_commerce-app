@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:e_commerce/utils/formatters/formatters.dart';
 
 
-class UserModel {
+class  UserModel {
   // keep those values final which you don't want to update
   final String id;
   String firstName;

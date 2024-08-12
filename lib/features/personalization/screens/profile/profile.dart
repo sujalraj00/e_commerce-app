@@ -1,10 +1,13 @@
 import 'package:e_commerce/common/widgets/appbar/appbar.dart';
 import 'package:e_commerce/common/widgets/images/t_circular_image.dart';
 import 'package:e_commerce/common/widgets/texts/section_heading.dart';
+import 'package:e_commerce/features/personalization/controllers/user_controller.dart';
+import 'package:e_commerce/features/personalization/screens/profile/widgets/change_name.dart';
 import 'package:e_commerce/features/personalization/screens/profile/widgets/profile_menu.dart';
 import 'package:e_commerce/utils/constants/image_strings.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -12,6 +15,7 @@ class ProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = UserController.instance;
     return  Scaffold(
       appBar: const TAppbar(title: Text('Profile'),  showBackArrow: true ,),
 
@@ -36,11 +40,13 @@ class ProfileScreen extends StatelessWidget {
               const SizedBox(height: TSizes.spaceBtwItems /2,),
               const Divider(),
               const SizedBox(height: TSizes.spaceBtwItems,),
+
+              // profile info
               const TSectionHeading(title: 'Profile Information', showActionButton: false,),
               const SizedBox(height: TSizes.spaceBtwItems,),
 
-              TProfileMenu(title: 'Name', value: 'Code with me', onPressed: () {  },),
-              TProfileMenu(title: 'UserName', value: 'Code with me', onPressed: () {  },),
+              TProfileMenu(title: 'Name', value: controller.user.value.fullName, onPressed: () => Get.to(() => const ChangeName())),
+              TProfileMenu(title: 'UserName', value: controller.user.value.username, onPressed: () {  },),
 
               const SizedBox(height: TSizes.spaceBtwItems,),
               const Divider(),
@@ -49,10 +55,11 @@ class ProfileScreen extends StatelessWidget {
               // ----Heading personal info
               const TSectionHeading(title: 'Personal Information' , showActionButton: false,),
               const SizedBox(height: TSizes.spaceBtwItems,),
-              TProfileMenu(title: 'UserId', value: '3455',icon: Iconsax.copy, onPressed: () {  },),
-              TProfileMenu(title: 'Email', value: 'xtz@gmail.com', onPressed: () {  },),
-              TProfileMenu(title: 'PhoneNumber', value: '234224511', onPressed: () {  },),
-              TProfileMenu(title: 'Gender', value: 'male', onPressed: () {  },),
+
+              TProfileMenu(title: 'UserId', value:  controller.user.value.id ,icon: Iconsax.copy, onPressed: () {  },),
+              TProfileMenu(title: 'Email', value:  controller.user.value.email , onPressed: () {  },),
+              TProfileMenu(title: 'PhoneNumber', value:  controller.user.value.phoneNumber , onPressed: () {  },),
+              TProfileMenu(title: 'Gender', value:  'Male' , onPressed: () {  },),
               TProfileMenu(title: 'Date of Birth', value: '23-05-2024', onPressed: () {  },),
 
               const Divider(),
