@@ -1,5 +1,6 @@
 import 'package:e_commerce/common/widgets/appbar/appbar.dart';
 import 'package:e_commerce/common/widgets/images/t_circular_image.dart';
+import 'package:e_commerce/common/widgets/loaders/shimmer.dart';
 import 'package:e_commerce/common/widgets/texts/section_heading.dart';
 import 'package:e_commerce/features/personalization/controllers/user_controller.dart';
 import 'package:e_commerce/features/personalization/screens/profile/widgets/change_name.dart';
@@ -8,6 +9,7 @@ import 'package:e_commerce/utils/constants/image_strings.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:iconsax/iconsax.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -30,8 +32,14 @@ class ProfileScreen extends StatelessWidget {
                 width: double.infinity,
                 child: Column(
                   children: [
-                    const TCircularImage(image: TImages.user, height: 80, width: 80,),
-                    TextButton(onPressed: () {}, child: const Text('Change Profile Picture')),
+                    Obx((){
+                      final networkImage = controller.user.value.profilePicture;
+                      final image = networkImage.isNotEmpty ? networkImage : TImages.user;
+                      return  controller.imageUploading.value
+                       ? const TShimmerEffect(width: 80, height: 80, radius: 80,)
+                       : TCircularImage(image: image, height: 80, width: 80, isNetworkImage: networkImage.isNotEmpty,);}),
+
+                    TextButton(onPressed: () => controller.uploadUserProfilePicture(), child: const Text('Change Profile Picture')),
                   ],
                 ),
               ),
@@ -68,7 +76,7 @@ class ProfileScreen extends StatelessWidget {
               Center(
                 child: TextButton(
                   child: const Text('Close Account' , style: TextStyle(color: Colors.red),),
-                  onPressed: (){},
+                  onPressed: () => controller.deleteAccountWarningPopup(),
                 ),
               )
             ],
