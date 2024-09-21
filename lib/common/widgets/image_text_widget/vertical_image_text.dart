@@ -1,4 +1,6 @@
+import 'package:e_commerce/common/widgets/images/t_circular_image.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../../utils/constants/colors.dart';
 import '../../../utils/constants/sizes.dart';
@@ -11,6 +13,7 @@ class TVerticalImageText extends StatelessWidget {
     required this.title,
     this.textColor = TColors.white,
     this.backgroundColor,
+    this.isNetworkImage = true,
     this.onTap,
   });
 
@@ -18,6 +21,7 @@ class TVerticalImageText extends StatelessWidget {
   final Color textColor;
   final Color? backgroundColor;
   final void Function()? onTap;
+  final bool isNetworkImage;
 
   @override
   Widget build(BuildContext context) {
@@ -28,21 +32,29 @@ class TVerticalImageText extends StatelessWidget {
         padding: const EdgeInsets.only(right: TSizes.spaceBtwItems),
         child: Column(
           children: [
-            Container(
-              width: 56,
-              height: 56,
-              padding: const EdgeInsets.all(TSizes.sm),
-              decoration: BoxDecoration(
-                  color: backgroundColor ?? (dark ? TColors.black : TColors.white) ,
-                  borderRadius: BorderRadius.circular(100)),
-              child: Center(
-                child: Image(
-                  image: AssetImage(image),
-                  fit: BoxFit.cover,
-                  color: dark ? TColors.light : TColors.dark,
-                ),
-              ),
-            ),
+            // Container(
+            //   width: 56,
+            //   height: 56,
+            //   padding: const EdgeInsets.all(TSizes.sm),
+            //   decoration: BoxDecoration(
+            //       color: backgroundColor ?? (dark ? TColors.black : TColors.white) ,
+            //       borderRadius: BorderRadius.circular(100)),
+            //   child: Center(
+            //     child: Image(
+            //       image: AssetImage(image),
+            //       fit: BoxFit.cover,
+            //       color: dark ? TColors.light : TColors.dark,
+            //     ),
+            //   ),
+            // ),
+            
+            TCircularImage(image: image,
+            fit: BoxFit.fitWidth,
+            padding: TSizes.sm * 1.4,
+            isNetworkImage: isNetworkImage,
+            backgroundColor: backgroundColor,
+            overlayColor: THelperFunctions.isDarkMode(context) ? TColors.light : TColors.dark,),
+            
             //text
             const SizedBox(
               height: TSizes.spaceBtwItems / 2,
