@@ -21,6 +21,7 @@ class StoreScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final categories = CategoryController.instance.featuredCategories;
+
     return DefaultTabController(
       length: categories.length,
       child: Scaffold(
@@ -81,12 +82,12 @@ class StoreScreen extends StatelessWidget {
 
                     //------------- tabs --
                     bottom: TTabBar(
-                        tabs: categories.map((category) => Tab(child:  Text(categories.name),)).toList()
+                        tabs: categories.map((category) => Tab(child:  Text(category.name))).toList()
                     )
                 )
               ];
             },            // -------body
-            body:const TabBarView(children: categories.map((category) => TCategoryTab())
+            body: TabBarView(children: categories.map((category) => TCategoryTab(category:  category,)).toList()
             )
         ),
       ),
