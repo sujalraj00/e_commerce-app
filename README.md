@@ -58,8 +58,20 @@
 </div>
 
 # Screenshots
-![image alt](https://github.com/sujalraj00/e_commerce-app/tree/17455ba3a8031322f25243fac42ff3a97794f982/screenshots)
-![image alt](https://github.com/sujalraj00/e_commerce-app/blob/2da07cdc17f84ee9cbfd423de82d75e49dfc90f1/screenshots/WhatsApp%20Image%202024-10-01%20at%204.08.52%20PM%20(1).jpeg)
+![image alt](https://github.com/sujalraj00/e_commerce-app/blob/7c7d98870b92aad3e00381c80b95b91327ae2a2d/screenshots/WhatsApp%20Image%202024-10-01%20at%204.08.52%20PM.jpeg)
+![image alt](https://github.com/sujalraj00/e_commerce-app/blob/7c7d98870b92aad3e00381c80b95b91327ae2a2d/screenshots/WhatsApp%20Image%202024-10-01%20at%204.08.52%20PM%20(1).jpeg)
+![image alt](https://github.com/sujalraj00/e_commerce-app/blob/7c7d98870b92aad3e00381c80b95b91327ae2a2d/screenshots/WhatsApp%20Image%202024-10-01%20at%204.08.52%20PM%20(2).jpeg)
+![image alt](https://github.com/sujalraj00/e_commerce-app/blob/7c7d98870b92aad3e00381c80b95b91327ae2a2d/screenshots/WhatsApp%20Image%202024-10-01%20at%204.08.53%20PM.jpeg)
+![image alt](https://github.com/sujalraj00/e_commerce-app/blob/7c7d98870b92aad3e00381c80b95b91327ae2a2d/screenshots/WhatsApp%20Image%202024-10-01%20at%204.08.53%20PM%20(1).jpeg)
+![image alt](https://github.com/sujalraj00/e_commerce-app/blob/7c7d98870b92aad3e00381c80b95b91327ae2a2d/screenshots/WhatsApp%20Image%202024-10-01%20at%204.08.53%20PM%20(2).jpeg)
+![image alt](https://github.com/sujalraj00/e_commerce-app/blob/7c7d98870b92aad3e00381c80b95b91327ae2a2d/screenshots/WhatsApp%20Image%202024-10-01%20at%204.08.55%20PM.jpeg)
+![image alt](https://github.com/sujalraj00/e_commerce-app/blob/7c7d98870b92aad3e00381c80b95b91327ae2a2d/screenshots/WhatsApp%20Image%202024-10-01%20at%204.08.55%20PM%20(1).jpeg)
+![image alt](https://github.com/sujalraj00/e_commerce-app/blob/7c7d98870b92aad3e00381c80b95b91327ae2a2d/screenshots/WhatsApp%20Image%202024-10-01%20at%204.08.55%20PM%20(2).jpeg)
+![image alt](https://github.com/sujalraj00/e_commerce-app/blob/7c7d98870b92aad3e00381c80b95b91327ae2a2d/screenshots/WhatsApp%20Image%202024-10-01%20at%204.08.56%20PM.jpeg)
+![image alt](https://github.com/sujalraj00/e_commerce-app/blob/7c7d98870b92aad3e00381c80b95b91327ae2a2d/screenshots/WhatsApp%20Image%202024-10-01%20at%204.08.57%20PM%20(1).jpeg)
+![image alt](https://github.com/sujalraj00/e_commerce-app/blob/7c7d98870b92aad3e00381c80b95b91327ae2a2d/screenshots/WhatsApp%20Image%202024-10-01%20at%204.08.57%20PM%20(2).jpeg)
+![image alt](https://github.com/sujalraj00/e_commerce-app/blob/7c7d98870b92aad3e00381c80b95b91327ae2a2d/screenshots/WhatsApp%20Image%202024-10-01%20at%204.08.58%20PM.jpeg)
+![image alt](https://github.com/sujalraj00/e_commerce-app/blob/7c7d98870b92aad3e00381c80b95b91327ae2a2d/screenshots/WhatsApp%20Image%202024-10-01%20at%204.08.58%20PM%20(1).jpeg)
 <br>
 
 <br>
