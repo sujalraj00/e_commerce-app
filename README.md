@@ -58,7 +58,7 @@
 </div>
 
 # Screenshots
-
+![image alt](https://github.com/sujalraj00/e_commerce-app/tree/17455ba3a8031322f25243fac42ff3a97794f982/screenshots)
 <br>
 
 <br>
