@@ -59,6 +59,7 @@
 
 # Screenshots
 ![image alt](https://github.com/sujalraj00/e_commerce-app/tree/17455ba3a8031322f25243fac42ff3a97794f982/screenshots)
+![image alt](https://github.com/sujalraj00/e_commerce-app/blob/2da07cdc17f84ee9cbfd423de82d75e49dfc90f1/screenshots/WhatsApp%20Image%202024-10-01%20at%204.08.52%20PM%20(1).jpeg)
 <br>
 
 <br>
