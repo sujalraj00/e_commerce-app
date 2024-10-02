@@ -36,11 +36,8 @@
 ## Table of Contents
 
 1. [Features](#features)
-2. [Installation](#installation)
-3. [Usage](#usage)
-4. [Screenshots](#screenshots)
-5. [License](#license)
-
+2. [Screenshots](#screenshots)
+3. [Installation](#installation)
 <br>
 ## Features
 <div align='left'>
@@ -77,20 +74,20 @@
 <br>
 <br>
 <div align='left'>
-## Setup
+## Installation
 
 <br>
 
 1. Clone the project:
 
     ```bash
-      git clone https://github.com/Yashshukla11/ExamTime_android.git
+      git clone https://github.com/sujalraj00/e_commerce-app
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-      cd ExamTime_android
+      cd e_commerce-app
     ```
 3. Navigate to the app directory:
 
